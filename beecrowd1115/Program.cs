@@ -9,8 +9,8 @@ class URI {
 
     static string Quadrant(){
         var linha = Console.ReadLine();
-        var x = int.Parse(linha.Split(" ")[0]);
-        var y = int.Parse(linha.Split(" ")[1]);
+        var x = int.Parse(linha.Split (' ')[0]);
+        var y = int.Parse(linha.Split(' ')[1]);
         if(x==0||y==0){
             return "";
         }
