@@ -6,25 +6,22 @@ namespace beecrowd1116
     {
         static void Main(string[] args)
         {
-            int qtdIteracoes = int.Parse(Console.ReadLine());
-            Console.WriteLine(DividingXByY(qtdIteracoes));
+            int n = int.Parse(Console.ReadLine());
+            double[] x = new double[n];
+            double[] y = new double[n];
+            for(int i=0;i<n;i++){
+                var linha = Console.ReadLine();
+                x[i] = double.Parse(linha.Split(' ')[0]);
+                y[i] = double.Parse(linha.Split(' ')[1]);
+            }
+            for(int i=0;i<n;i++){
+                if(y[i]==0&&x[i]!=0){
+                    Console.WriteLine("divisao impossivel");
+                }else{
+                    Console.WriteLine(Math.Round(x[i]/y[i],1));    
+                }
+            }
         }
 
-        static string DividingXByY(int qtdIteracoes){
-            if(qtdIteracoes==0){
-                return "";
-            }
-            var linha = Console.ReadLine();
-            double x = double.Parse(linha.Split(' ')[0]);
-            double y = double.Parse(linha.Split(' ')[1]);
-            
-            if(y==0&&x!=0){
-                return "divisao impossivel\n"+DividingXByY(qtdIteracoes-1);
-            }else
-            {
-                var resultado = x/y;
-                return resultado.ToString()+"\n"+DividingXByY(qtdIteracoes-1);
-            }
-        }
     }
 }
