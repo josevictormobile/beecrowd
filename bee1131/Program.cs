@@ -60,9 +60,9 @@ namespace bee1131
         static string OutputGrenalSummary(GrenalSummary summary)
         {
             return $"{summary.GrenalsAmount} grenais\n"
-                +$"Inter: {summary.InterVictories}\n"
-                +$"Gremio: {summary.GremioVictories}\n"
-                +$"Empates: {summary.DrawsAmount}\n"
+                +$"Inter:{summary.InterVictories}\n"
+                +$"Gremio:{summary.GremioVictories}\n"
+                +$"Empates:{summary.DrawsAmount}\n"
                 +WhoWonMore(summary.InterVictories, summary.GremioVictories);
         }
 
