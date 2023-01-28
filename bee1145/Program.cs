@@ -11,4 +11,4 @@ for(int i=1;i<=y;i++){
         Console.Write(i + " ");
     }
         
-}
+}//ass: comentário com finalidade de commitar da minha conta principal e contabilizar o commit
