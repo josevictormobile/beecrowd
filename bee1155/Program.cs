@@ -1,4 +1,5 @@
-﻿double s=0;
+﻿//feito por jose victor, exercico beecrowd
+double s=0;
 for(double i = 1; i<=100;i++){
     s+=1/i;
     
