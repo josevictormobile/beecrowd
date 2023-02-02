@@ -22,6 +22,6 @@ def RecursiveSolution(sum, amount):
     sum += age
     amount+=1
     return RecursiveSolution(sum,amount)
-print(str(RecursiveSolution(0,0))); 
+print(str(RecursiveSolution(0,0)))
 
 
